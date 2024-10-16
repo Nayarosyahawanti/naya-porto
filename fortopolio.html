@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Naya rosya hawanti</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #2e3a47; /* Navy background */
+      color: #f0f0f0; /* Light text for readability */
+    }
+
+    .navbar {
+      background-color: #3a4b61; /* Dark gray-blue background for the navbar */
+      padding: 10px 20px;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #f0f0f0; /* Light text for navbar */
+    }
+
+    .nav-link:hover {
+      color: #c0c0c0; /* Lighter color on hover */
+    }
+
+    .hero {
+      background-color: #4f6d8c; /* Softer navy for the hero section */
+      padding: 80px 0; /* More padding for hero */
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #ffffff; /* White border around the image */
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f0f0f0; /* Light text color */
+    }
+
+    .about p, .contact p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto; /* Center the text */
+      color: #ffffff; /* Light text for readability */
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Space between skill boxes */
+    }
+
+    .skill {
+      background-color: #3b4b60; /* Dark gray-blue for skill boxes */
+      padding: 15px 20px;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1 1 150px; /* Flexbox to adjust width */
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; /* Space between contact items */
+    }
+
+    .contact-info a {
+      color: #f0f0f0; /* Light text color */
+      text-decoration: none; /* Remove underline */
+      transition: color 0.3s; /* Smooth transition */
+    }
+
+    .contact-info a:hover {
+      color: #c0c0c0; /* Change color on hover */
+    }
+
+    footer {
+      background-color: #3a4b61;
+      color: #f0f0f0;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">👩🏻‍🎓Hallo, i'm Naya Rosya Hawanti. I am a dedicated UI/UX Web Development Designer🖥️</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <img src="WhatsApp Image 2024-10-13 at 21.10.33.jpeg" alt="Foto Profil" class="img-fluid">
+      <h1>NAYA ROSYA HAWANTI</h1>
+      <p>Universitas Dinamika Bangsa Jambi</p>
+      <p>Web Development & UI/UX Design</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>As an Information Systems student, I am highly enthusiastic about UI/UX Design. During my studies, I actively participated in my university's student legislative body as the head of the 3rd commission, while maintaining a strong academic focus. I possess excellent communication skills and am adept at working collaboratively in teams.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="Experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <span>DLM Organization</span>
+        <p>As the Head of Commission III: Aspirations and Control, I was entrusted with the oversight of the student executive board's performance. My primary responsibility was to ensure that all programs and activities were executed effectively and efficiently. During my tenure, I successfully led the student congress, which attracted over 40 participants from various universities and student organizations in Jambi. This event highlighted the dynamic spirit of the nation and showcased our university's commitment to student engagement.
+          As a committee member for the 2023 Joint Work Meeting at Universitas Dinamika Bangsa, I was responsible for ensuring the smooth running of the event. I successfully managed to attract over 30 registered participants. Additionally, I served as the chief organizer of the 2023 Student Congress at Universitas Dinamika Bangsa, where we successfully discussed and ratified the University Student Family ADRT bylaws. The event was attended by over 40 participants, including representatives from various student organizations and individual students.</p>
+        <span>UNAMA's PLATINUM Program</span>
+        <p>I was also a committee member for UNAMA's PLATINUM program, where I served as a mentor in the young intellectual training. My responsibilities included guiding, supervising, and monitoring the activities of new students at Universitas Dinamika Bangsa, Jambi. I successfully mentored over 100 new students</p>
+        </section>
+        
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">UI/UX Design</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>💌Email: <a href="mailto:nayarosya7@gmail.com">nayarosya7@gmail.com</a></p>
+        <p>📞Phone: <a href="tel:0887437961506">0887437961506</a></p>
+        <p>📲Instagram <a href= "@Nayrsyhwnt">@nayrsyhwnt</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Naya Rosya Hawanti. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
